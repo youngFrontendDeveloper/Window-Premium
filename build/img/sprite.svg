@@ -25,8 +25,14 @@
 </g>
 </symbol><symbol id="dashed-bottom" viewBox="0 0 108 116">
 <path d="M106 0.5V58L1.5 58L1.5 116" stroke-width="3" stroke-dasharray="10 10"/>
+</symbol><symbol id="dashed-green-desktop" viewBox="0 0 437 291">
+<path d="M437 2H330.377V289H2V25.1867" stroke="#19E0BE" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-green" viewBox="0 0 259 544">
 <path d="M2 0L2 106.623H257V270.811H119L119 428.5V486H14.5L14.5 544" stroke-width="3" stroke-dasharray="10 10"/>
+</symbol><symbol id="dashed-grey-desktop" viewBox="0 0 876 290">
+<path d="M876 1.698H757V189.825H664.379V1.69794L496 1.698H436.749H330.188V288H2V24.8283" stroke="#E0E2E2" stroke-width="3" stroke-dasharray="10 10"/>
+</symbol><symbol id="dashed-grey" viewBox="0 0 108 116">
+<path d="M106 0.5V58L1.5 58L1.5 116" stroke="#E0E2E2" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-top-desktop" viewBox="0 0 437 291">
 <path d="M437 2H330.377V289H2V25.1867" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-top" viewBox="0 0 272 125">

@@ -20,10 +20,11 @@ let mySwiper1 = new Swiper(slider1, {
 			slidesPerView: 2,
 			spaceBetween: -16,
 		},
-		1025: {
-			slidesPerView: 3,
-			spaceBetween: 16,
-		}
+		1200: {     
+      loop: true,		
+      slidesPerView: 'auto',
+      spaceBetween: 24,  
+    	}
 		
 	}
 });
@@ -46,7 +47,7 @@ let mySwiper2 = new Swiper(slider2, {
 			slidesPerView: 2,
 			spaceBetween: -16,
 		},
-		1025: {
+		1200: {
 			slidesPerView: 3,
 			spaceBetween: 16,
 		}		

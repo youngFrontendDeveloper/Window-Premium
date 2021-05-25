@@ -27,50 +27,6 @@
     width: 100%;
     justify-content: space-between;
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 238px;
-  //   left: 60px;
-  //   width: 544px;
-  //   height: 255px;
-  //   background-image: url(../img/dashed-green.svg);
-  //   background-repeat: no-repeat;
-  //   z-index: -1;
-
-  //   @media @lg {
-  //     top: 50px;
-  //     width: 435px;
-  //     height: 287px;
-  //     background-image: url(../img/dashed-green-desktop.svg);
-  //   }
-  // }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 666.5px;
-  //   left: 72.5px;
-  //   width: 115.5px;
-  //   height: 104.55px;
-  //   background-image: url(../img/dashed-grey.svg);
-  //   background-repeat: no-repeat;
-  //   z-index: -1;
-
-  //   @media @lg {
-  //     top: 300px;
-  //     left: auto;
-  //     right: 170px;
-  //   }
-
-  //   @media @xl {
-  //     top: 98.7px;
-  //     left: auto;
-  //     right: 276px;
-  //     background-image: url(../img/dashed-grey-desktop.svg);
-  //   }
-  // }
 }
 
 .stages__item {
@@ -153,7 +109,6 @@
   }
 }
 
-
 .stages__item:nth-child(1):hover .stages__item-arr1,
 .stages__item:nth-child(1):hover .stages__item-arr1-desktop {
   stroke: @color-green;
@@ -195,7 +150,6 @@
   stroke: @color-green;
 }
 
-
 .stages__item-number {
   display: block;
   margin-bottom: 40px;
@@ -209,7 +163,7 @@
 .stages__item:hover .stages__item-number {
   color: @color-green;
   -webkit-text-stroke: 0;
-  cursor: pointer;
+  // cursor: pointer;
   transition: color 0.3s;
 }
 
