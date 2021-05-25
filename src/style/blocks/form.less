@@ -1,0 +1,52 @@
+.form {
+  width: 296px;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+.form__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 20px 24px 19px 24px;
+}
+
+.form__label {
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: @color-dark;
+  margin-bottom: 32px;
+}
+
+.form__check {
+  display: none;
+}
+
+.form__checkmark {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: @color-dark;
+  float: left;
+}
+
+.form__label:hover,
+.form__checkmark:hover {
+  cursor: pointer;
+}
+
+.form__check:checked~.form__checkmark::after {
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: 6.38px;
+  width: 11.25px;
+  height: 9px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  z-index: 5;
+}

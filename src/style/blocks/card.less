@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+  width: 375px;
+  height: 453px;
+  overflow: hidden;
+
+  @media @xl {
+    max-width: 400px;
+    height: 620px;
+    flex-grow: 1;
+
+    &:nth-child(4),
+    &:last-child {
+      max-width: 600px;
+      max-height: 620px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #212B31 5.69%, rgba(33, 43, 49, 0) 100%)
+  }
+}
+
+.card:hover .card__text-block {
+  color: @color-dark;
+  background-color: @color-green;
+  transition: background 0.3s;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__text-block {
+  position: absolute;
+  top: 238px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-left: 16px;
+  color: @color-white;
+
+  @media @xl {
+    top: 310px;
+    padding-top: 95px;
+  }
+}
+
+.card__title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__text {
+  width: 80%;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.card__link {
+  font-size: 16px;
+  line-height: 15px;
+  color: @color-white;
+}
+
+.card:hover .card__link {
+  color: @color-dark;
+}
+
+.card:hover .card__link:hover {
+  color: @color-white;
+}
+
+.card__arrow {
+  width: 20px;
+  margin-left: 18px;
+  fill: @color-white;
+
+  &:hover {
+    fill: @color-white;
+  }
+}
+
+.card:hover .card__arrow {
+  fill: @color-dark;
+}
+
+.card__link:hover .card__arrow {
+  fill: @color-white;
+}

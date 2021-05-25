@@ -1,0 +1,116 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 603px;
+
+  @media @md {
+    height: 536px;
+  }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(31, 41, 47, 0.77) 0%, rgba(32, 42, 49, 0.529375) 101.73%), url(../img/banner-mb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media @md {
+    background: linear-gradient(90deg, rgba(31, 41, 47, 0.77) 0%, rgba(32, 42, 49, 0.529375) 101.73%), url(../img/banner.jpg);
+    background-position: center 0;
+  }
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .banner::before {
+    background: linear-gradient(90deg, rgba(31, 41, 47, 0.77) 0%, rgba(32, 42, 49, 0.529375) 101.73%), url(../img/banner-mb@2x.jpg);
+
+    @media @md {
+      background: linear-gradient(90deg, rgba(31, 41, 47, 0.77) 0%, rgba(32, 42, 49, 0.529375) 101.73%), url(../img/banner@2x.jpg);
+
+    }
+  }
+}
+
+.banner__wrapper {
+  position: relative;
+}
+
+.banner__text-block {
+  position: absolute;
+  top: 138px;
+  left: 0;
+  width: 271px;
+  height: 327px;
+  padding-left: 16px;
+
+  @media @xl {
+    width: 468px;
+    height: 303px;
+    top: 116px;
+    left: 0px;
+  }
+}
+
+.banner__text {
+  font-size: 38px;
+  line-height: 36px;
+  color: @color-white;
+
+  // @media @xl {
+  //   font-size: 38px;
+  //   line-height: 36px;
+  // }
+}
+
+.banner__big-text {
+  display: inline-block;
+  width: 246px;
+  height: 110px;
+  margin-bottom: 4px;
+  margin-left: -16px;
+  padding-left: 16px;
+  font-size: 95px;
+  font-weight: 900;
+  line-height: 102.4px;
+  color: @color-white;
+  background-color: @color-green;
+
+  @media @xl {
+    margin-bottom: 3px;
+    margin-left: 7px;
+  }
+}
+
+.banner__small-text {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 22px;
+  line-height: 21px;
+  letter-spacing: -0.06em;
+  color: @color-white;
+
+  @media @xl {
+    margin-bottom: 14px;
+  }
+}
+
+.banner__yellow-text {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #EDCE5F;
+}
+
+.banner__button {
+  border: 2px solid @color-white;
+}

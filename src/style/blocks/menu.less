@@ -1,0 +1,52 @@
+.menu {
+  min-width: 375px;
+  max-width: 768px;
+  padding: 177px 20px 21px 40px;
+  background-color: @color-white;
+  z-index: 5;
+
+  @media @xl {
+    position: static;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.menu__item {
+  margin-bottom: 72px;
+
+  @media @xl {
+    margin-bottom: 0;
+  }
+}
+
+.menu__link {
+  padding-bottom: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  color: @color-dark;
+  font-size: 24px;
+  line-height: 22.97px;
+  border-bottom: 2px solid transparent;
+
+  @media @xl {
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  &--active {
+    border-bottom-color: @color-green;
+  }
+}
+
+.menu__item:hover {
+  cursor: pointer;
+}
+
+.menu__item:hover .menu__link {
+  border-bottom-color: @color-green;
+}

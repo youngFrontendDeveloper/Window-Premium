@@ -1,0 +1,69 @@
+.tabs__title {
+  padding-bottom: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: inherit;
+  opacity: 0.3;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  background-color: transparent;
+
+  @media @xl {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  // &--active {}
+}
+
+.tabs__title--active {
+  opacity: 1;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.tabs__title-colors-wood {
+  margin-right: 32px;
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+
+.tabs__content-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 497px;
+  height: 326px;
+
+  @media @xl {
+    width: 536px;
+  }
+}
+
+.tabs__content-img {
+  display: block;
+  width: 98px;
+  height: 98px;
+  text-align: center;
+}
+
+.tabs__content-title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #000000;
+}
