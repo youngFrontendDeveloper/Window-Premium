@@ -250,6 +250,3 @@ const forms = () => {
 };
 
 forms();
-
-
-  

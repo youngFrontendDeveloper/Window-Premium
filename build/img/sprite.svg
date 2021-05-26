@@ -14,8 +14,6 @@
 <path d="M2 3.66671C2 2.93033 2.59695 2.33337 3.33333 2.33337H18.6667C19.403 2.33337 20 2.93033 20 3.66671V8.33337C20 9.06975 19.403 9.66671 18.6667 9.66671H3.33333C2.59695 9.66671 2 9.06975 2 8.33337V3.66671Z" fill="black"/>
 </symbol><symbol id="check" viewBox="0 0 12 10">
 <path d="M10.3035 0.764253C10.5718 0.448647 11.0451 0.41027 11.3607 0.678535C11.6763 0.946799 11.7147 1.42012 11.4464 1.73572L5.07144 9.23572C4.79896 9.55628 4.31616 9.59005 4.00171 9.31055L0.626711 6.31055C0.317124 6.03536 0.289238 5.5613 0.564426 5.25172C0.839615 4.94213 1.31367 4.91424 1.62326 5.18943L4.42515 7.68L10.3035 0.764253Z" fill="white"/>
-</symbol><symbol id="dashed-bot-desktop" viewBox="0 0 876 290">
-<path d="M876 1.698H757V189.825H664.379V1.69794L496 1.698H436.749H330.188V288H2V24.8283" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-bottom-desktop" viewBox="0 0 127 227">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="127" height="227">
 <rect width="127" height="227">
@@ -25,14 +23,6 @@
 </g>
 </symbol><symbol id="dashed-bottom" viewBox="0 0 108 116">
 <path d="M106 0.5V58L1.5 58L1.5 116" stroke-width="3" stroke-dasharray="10 10"/>
-</symbol><symbol id="dashed-green-desktop" viewBox="0 0 437 291">
-<path d="M437 2H330.377V289H2V25.1867" stroke="#19E0BE" stroke-width="3" stroke-dasharray="10 10"/>
-</symbol><symbol id="dashed-green" viewBox="0 0 259 544">
-<path d="M2 0L2 106.623H257V270.811H119L119 428.5V486H14.5L14.5 544" stroke-width="3" stroke-dasharray="10 10"/>
-</symbol><symbol id="dashed-grey-desktop" viewBox="0 0 876 290">
-<path d="M876 1.698H757V189.825H664.379V1.69794L496 1.698H436.749H330.188V288H2V24.8283" stroke="#E0E2E2" stroke-width="3" stroke-dasharray="10 10"/>
-</symbol><symbol id="dashed-grey" viewBox="0 0 108 116">
-<path d="M106 0.5V58L1.5 58L1.5 116" stroke="#E0E2E2" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-top-desktop" viewBox="0 0 437 291">
 <path d="M437 2H330.377V289H2V25.1867" stroke-width="3" stroke-dasharray="10 10"/>
 </symbol><symbol id="dashed-top" viewBox="0 0 272 125">
