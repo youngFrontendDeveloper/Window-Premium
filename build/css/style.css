@@ -350,9 +350,15 @@ svg {
 }
 .nav {
   position: relative;
+  /*  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;*/
 }
 @media screen and (min-width: 1200px) {
   .nav {
+    position: static;
     width: 768px;
     height: 56px;
     margin-right: 40px;
@@ -362,9 +368,11 @@ svg {
   }
 }
 .nav__menu {
-  position: absolute;
-  top: -75px;
-  right: -5vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 @media screen and (min-width: 1200px) {
   .nav__menu {
@@ -378,10 +386,19 @@ svg {
 }
 .menu {
   min-width: 375px;
-  max-width: 768px;
   padding: 177px 20px 21px 40px;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 10;
+}
+@media screen and (min-width: 576px) {
+  .menu {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-left: 200px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu {
@@ -445,6 +462,9 @@ svg {
   }
 }
 .mobile-btn--close {
+  position: fixed;
+  top: 80px;
+  right: 25px;
   background-image: url(../img/menu-close.svg);
   background-repeat: no-repeat;
 }
