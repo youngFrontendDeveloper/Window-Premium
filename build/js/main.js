@@ -94,18 +94,30 @@ function changeActiveClass(e)
 
 let menu = document.querySelector('.menu');
 let menuButton = document.querySelector('.nav__mobile');
+let menuItem = document.querySelectorAll('.menu__item');
 
 function DeleteClassHidden() {
-  if(document.documentElement.clientWidth < 768) {
+  if(document.documentElement.clientWidth < 1200) {
     menuButton.classList.remove("mobile-btn--close");
     menu.classList.add("visualy-hidden");
   }
 }
 DeleteClassHidden();
 
+function closeMobileMenu() {
+    menu.classList.toggle("visualy-hidden");
+    menuButton.classList.toggle("mobile-btn--close");
+}
+
 menuButton.addEventListener('click', function() {
-  menu.classList.toggle("visualy-hidden");
-  menuButton.classList.toggle("mobile-btn--close");
+    menu.classList.toggle("visualy-hidden");
+    menuButton.classList.toggle("mobile-btn--close");
+} );
+menuItem.forEach(function(item) {
+    item.addEventListener('click', function() {
+        menu.classList.add("visualy-hidden");
+        menuButton.classList.remove("mobile-btn--close");gitqqq
+    });
 });
 
 

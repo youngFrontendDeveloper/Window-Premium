@@ -86,9 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -210,6 +207,13 @@ svg {
   font-family: 'Gotham Pro';
   src: local('Gotham Pro'), local('GothamPro'), url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.woff2') format('woff2'), url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light'), local('Gotham Pro Light'), url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.woff2') format('woff2'), url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -350,9 +354,15 @@ svg {
 }
 .nav {
   position: relative;
+  /*  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;*/
 }
 @media screen and (min-width: 1200px) {
   .nav {
+    position: static;
     width: 768px;
     height: 56px;
     margin-right: 40px;
@@ -362,9 +372,11 @@ svg {
   }
 }
 .nav__menu {
-  position: absolute;
-  top: -75px;
-  right: -5vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
 @media screen and (min-width: 1200px) {
   .nav__menu {
@@ -378,10 +390,19 @@ svg {
 }
 .menu {
   min-width: 375px;
-  max-width: 768px;
   padding: 177px 20px 21px 40px;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 10;
+}
+@media screen and (min-width: 576px) {
+  .menu {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-left: 200px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu {
@@ -445,6 +466,9 @@ svg {
   }
 }
 .mobile-btn--close {
+  position: fixed;
+  top: 80px;
+  right: 25px;
   background-image: url(../img/menu-close.svg);
   background-repeat: no-repeat;
 }
@@ -943,7 +967,7 @@ svg {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 343px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1378,7 +1402,7 @@ svg {
 }
 .tabs__content {
   margin-bottom: 40px;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .tabs__content-item {
   display: flex;

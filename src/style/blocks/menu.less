@@ -1,9 +1,16 @@
 .menu {
   min-width: 375px;
-  max-width: 768px;
+  //max-width: 768px;
   padding: 177px 20px 21px 40px;
   background-color: @color-white;
-  z-index: 5;
+  z-index: 10;
+
+  @media @sm {
+    padding-left: 100px;
+  }
+  @media @md {
+    padding-left: 200px;
+  }
 
   @media @xl {
     position: static;
