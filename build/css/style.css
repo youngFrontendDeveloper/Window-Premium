@@ -1402,7 +1402,7 @@ svg {
 }
 .tabs__content {
   margin-bottom: 40px;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .tabs__content-item {
   display: flex;
