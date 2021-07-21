@@ -198,21 +198,21 @@ svg {
 }
 @font-face {
   font-family: 'Gotham Pro';
-  src: local('../fonts/Gotham Pro Medium'), local('../fonts/GothamPro-Medium'), url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium.woff2') format('woff2'), url('../fonts/GothamPro-Medium.woff') format('woff'), url('../fonts/GothamPro-Medium.ttf') format('truetype');
+  src: local('../fonts/Gotham Pro Medium'), local('../fonts/GothamPro-Medium'), url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium.woff2') format('woff2'), url('../fonts/GothamPro-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Pro';
-  src: local('Gotham Pro'), local('GothamPro'), url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.woff2') format('woff2'), url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype');
+  src: local('Gotham Pro'), local('GothamPro'), url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.woff2') format('woff2'), url('../fonts/GothamPro.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Gotham Pro';
-  src: local('Gotham Pro Light'), local('Gotham Pro Light'), url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.woff2') format('woff2'), url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype');
+  src: local('Gotham Pro Light'), local('Gotham Pro Light'), url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.woff2') format('woff2'), url('../fonts/GothamPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1761,9 +1761,14 @@ svg {
 }
 .footer__bottom-text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .footer__bottom-text {
+    font-size: 16px;
+  }
 }
 .footer__contacts-text {
   line-height: 21px;
@@ -1771,6 +1776,8 @@ svg {
 .footer__contacts-phone {
   display: inline-block;
   margin-bottom: 16px;
+  font-size: inherit;
+  font-style: inherit;
   font-weight: 500;
   color: #ffffff;
 }
