@@ -12,18 +12,19 @@
 
 .stages__list {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: block;
+  //flex-wrap: wrap;
   max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 
   @media @lg {
     width: 760px;
+    max-width: 100%;
   }
 
   @media @xl {
+    display: flex;
     width: 100%;
     justify-content: space-between;
   }
@@ -33,6 +34,8 @@
   position: relative;
   width: 343px;
   height: 313px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
   padding: 56px 35px 40px 36px;
   background-color: @color-light-grey;
@@ -99,13 +102,17 @@
   @media @xl {
     position: absolute;
     bottom: -63px;
-    left: 60px;
+    left: 30px;
     display: block;
     width: 435px;
     height: 287px;
     fill: transparent;
     stroke: #C4C4C4;
     z-index: -10;
+  }
+
+  @media @xxl {
+    left: 40px;
   }
 }
 

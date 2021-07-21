@@ -964,9 +964,7 @@ svg {
 }
 .stages__list {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: block;
   max-width: 343px;
   margin-left: auto;
   margin-right: auto;
@@ -974,10 +972,12 @@ svg {
 @media screen and (min-width: 992px) {
   .stages__list {
     width: 760px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .stages__list {
+    display: flex;
     width: 100%;
     justify-content: space-between;
   }
@@ -986,6 +986,8 @@ svg {
   position: relative;
   width: 343px;
   height: 313px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
   padding: 56px 35px 40px 36px;
   background-color: #F7F9FA;
@@ -1048,13 +1050,18 @@ svg {
   .stages__item-arr1-desktop {
     position: absolute;
     bottom: -63px;
-    left: 60px;
+    left: 30px;
     display: block;
     width: 435px;
     height: 287px;
     fill: transparent;
     stroke: #C4C4C4;
     z-index: -10;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .stages__item-arr1-desktop {
+    left: 40px;
   }
 }
 .stages__item:nth-child(1):hover .stages__item-arr1,
